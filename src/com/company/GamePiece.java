@@ -59,13 +59,13 @@ public class GamePiece {
         if (this.getFrozen()) {
             System.out.println("Piece is frozen and cannot move to postion: (" + x + "," + y + ").");
         }
-        else if (x > this.getMaxX() && y > this.getMaxY()){
-            System.out.println("Sorry, both x and y are  is outside of their respective bounds");
+        else if ((x > this.getMaxX() && y > this.getMaxY()) || x < this.getMinX() && y < this.getMinY()){
+            System.out.println("Sorry, both x and y are outside of their respective bounds");
         }
-        else if (x > this.getMaxX()) {
+        else if (x > this.getMaxX() || x < this.getMinX()) {
             System.out.println("Sorry, " + x + " is outide of the x bound");
         }
-        else if (y > this.getMaxY()) {
+        else if (y > this.getMaxY() || y < this.getMinY()) {
             System.out.println("Sorry, " + y + " is outide of the y bound");
         }
         else {

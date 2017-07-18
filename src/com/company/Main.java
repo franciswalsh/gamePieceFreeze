@@ -45,5 +45,11 @@ public class Main {
         System.out.println("New position x: " + firstPiece.getPositionX() + ". New position y: " + firstPiece.getPositionY() + ".");
 
         firstPiece.move(120, 520);
+
+        firstPiece.move(-10, -10);
+
+        firstPiece.move(-10, 24);
+
+        firstPiece.move(20, -2);
     }
 }
